@@ -54,7 +54,7 @@ sub new {
    # List of mandatory binaries
    my @binaries_mandatory = ("touch", "rm",  "mv", "echo", "modprobe", "tunctl", 
    "ifconfig", "cp", "cat", "lsof", "chown",
-   "hostname", "route", "scp", "chmod", "ssh", "uml_mconsole",                                                                             
+   "hostname", "route", "scp", "chmod", "ssh", #"uml_mconsole",                                                                             
    "date", "ps", "grep", "kill", "ln", "mkisofs", "mktemp", "su", "find",
    "qemu-img", "mkfs.msdos", "mkfs.ext3", "mount", "umount", "sed", "ip", "vnx_mount_rootfs", "pv", "wmctrl");
 

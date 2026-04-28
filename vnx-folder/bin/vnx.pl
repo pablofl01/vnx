@@ -4490,7 +4490,7 @@ back_to_user();
     # Set memory value
     if ($opts{'mem'}) {
         $mem = $opts{'mem'};
-        pre_wlog ("WARNING: --mem option ignored for LXC VMs") if (!$rootfs_type eq 'lxc');
+        pre_wlog ("WARNING: --mem option ignored for LXC VMs") if ($rootfs_type eq 'lxc');
     } else {
         $mem = $default_mem;
     }

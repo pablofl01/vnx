@@ -885,7 +885,7 @@ user();
         unless (empty($vm_vcpu_quota)) { # A value for vcpu_quota has been specified
 
             if ($vm_type eq "lxc") {
-            	if ( ! $vm_vcpu_quota =~ /1?[0-9]?[0-9]?%/) {
+            	if ( $vm_vcpu_quota !~ /1?[0-9]?[0-9]?%/) {
                 #if ( ($vm_vcpu_quota < 0) || ($vm_vcpu_quota > 100) ) {
                     return "Incorrect virtual CPU quota atribute value ($vm_vcpu_quota) specified for VM '$name' (must be in the range [0-100])";
                 }           
